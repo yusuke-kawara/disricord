@@ -6,14 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= og_tags(
-      title: @page_title || "ディスリコード",
-      description: @page_description || "ただひたすらでぃすられるだけのアプリ！！",
-      image: @page_image || image_url("itazura240.jpg")
-    ) %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= display_meta_tags(default_meta_tags) %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
 
