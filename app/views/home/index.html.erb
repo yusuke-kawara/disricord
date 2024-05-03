@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="rock-text">~ ディスリコード ~</div>
+
+<%= image_tag 'itazura2.jpg', alt: 'いたずら画像', class: 'my-image' %>
+
+<div class="container">
+  <button id="play-audio">ディスられに行く</button>
+</div>
+<audio id="audio-player" src="" hidden></audio>
+
+<div class="container">
+  <%= link_to 'https://twitter.com/intent/tweet?' + { text: 'ただひたすらディスられるだけのアプリ！！ #ディスリコード', url: 'https://disricord.onrender.com/' }.to_query, target: '_blank', class: 'twitter-share-button' do %>
+    <i class="fab fa-twitter"></i> Xで共有する
+  <% end %>
+</div>
+
+<script>
+  document.getElementById('play-audio').addEventListener('click', function() {
+    fetch('/home/random_audio')
+      .then(response => response.json())
+      .then(data => {
+        const player = document.getElementById('audio-player');
+        player.src = `/audios/${data.audio}`;
+        player.play();
+      });
+  });
+</script>

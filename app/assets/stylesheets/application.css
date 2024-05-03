@@ -13,3 +13,70 @@
  *= require_tree .
  *= require_self
  */
+.rock-text {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffe86e; /* 文字色 */
+    text-shadow: 
+      2px 2px 0 #777, /* 影の効果で岩っぽさを出す */
+      -1px -1px 0 #777, 
+      1px -1px 0 #777, 
+      -1px 1px 0 #777,
+      1px 1px 0 #777;
+    letter-spacing: 2px; /* 文字間隔 */
+  }
+
+.my-image {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#play-audio {
+
+  background-color: #FF85CB;  /* 明るいピンク色 */
+  color: white;               /* 文字色は白 */
+  border: none;               /* ボーダーなし */
+  border-radius: 20px;        /* 角を丸くする */
+  padding: 10px 20px;         /* パディングを調整 */
+  font-size: 16px;            /* フォントサイズ */
+  font-family: 'Arial', sans-serif; /* フォントファミリー */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* テキストに影をつける */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);  /* ボックスに影をつける */
+  cursor: pointer;            /* カーソルをポインタに */
+  transition: transform 0.3s ease; /* クリック時にアニメーション効果 */
+  margin-top: 30px;
+  display: inline-block;
+  
+}
+
+#play-audio:hover {
+    transform: scale(1.1);      /* ホバー時に少し大きくする */
+}
+
+.twitter-share-button {
+    background-color: #1DA1F2; /* Twitterのブランドカラー */
+    color: white;
+    border: none;               /* ボーダーなし */
+    border-radius: 20px;        /* 角を丸くする */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* フォントファミリー */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* テキストに影をつける */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);  /* ボックスに影をつける */
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .twitter-share-button i {
+    margin-right: 5px;
+  }
+  .twitter-share-button:hover {
+    transform: scale(1.1);
+  }
