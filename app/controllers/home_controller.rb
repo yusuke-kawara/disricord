@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     @page_title = "ディスリコード"
     @page_description = "ただひたすらディスられるだけのアプリ！！"
-    @page_image = helpers.image_url("itazura2.jpg")
+    @page_image = helpers.image_url("itazura240.jpg")
   end
 
   def random_audio
