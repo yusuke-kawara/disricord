@@ -15,7 +15,7 @@
  */
 .rock-text {
     text-align: center;
-    font-size: 48px;
+    font-size: 33px;
     font-weight: bold;
     color: #ffe86e; /* 文字色 */
     text-shadow: 
@@ -29,7 +29,7 @@
 
 .my-image {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
   width: 50%;
 }
 
