@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ディスリコード</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>ディスリコード</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <meta property="og:title" content="ディスリコード" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://disricord.onrender.com/" />
-    <meta property="og:image" content="https://disricord.onrender.com/itazura240.jpg" />
-    <meta property="og:description" content="ただひたすらディスられるだけのアプリ！！" />
-    <meta property="og:site_name" content="ディスリコード" />
-    <meta property="og:type" content="website" />
+  <!-- Open Graph Protocol for better link preview -->
+  <meta property="og:title" content="ディスリコード" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://disricord.onrender.com/" />
+  <meta property="og:image" content="https://disricord.onrender.com/itazura240.jpg" />
+  <meta property="og:description" content="ただひたすらディスられるだけのアプリ！！" />
+  <meta property="og:site_name" content="ディスリコード" />
 
-    <!-- X（旧Twitter） Card tags -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@kawara20230719" />
-    <meta property="og:url" content="https://disricord.onrender.com/" />
-    <meta property="og:site_name" content="ディスリコード" />
-    <meta property="og:image" content="https://disricord.onrender.com/itazura240.jpg" />
+  <!-- Twitter Card (X) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@kawara20230719" />
+  <meta name="twitter:title" content="ディスリコード" />
+  <meta name="twitter:description" content="ただひたすらディスられるだけのアプリ！！" />
+  <meta name="twitter:image" content="https://disricord.onrender.com/itazura240.jpg" />
 
-    
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-    <%= display_meta_tags(default_meta_tags) %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <%= favicon_link_tag 'favicon.ico' %>
-  </head>
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+  <%= yield %>
+</body>
 </html>
