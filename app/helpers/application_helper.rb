@@ -15,7 +15,7 @@ module ApplicationHelper
         description: 'ただディスられるだけのアプリ。',
         type: 'website',
         url: request.try(:original_url),
-        image: image_url('itazura240.jpg'),
+        image: asset_url('itazura240.jpg'),
         local: 'ja-JP'
       },
     }
